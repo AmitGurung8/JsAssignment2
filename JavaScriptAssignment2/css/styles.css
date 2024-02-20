@@ -1,0 +1,206 @@
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Attack Graffiti';
+    src: url('../font/AttackGraffiti-ZVJPZ.TTF') format('truetype');
+}
+
+/* Global styles for the entire document */
+body {
+    background-color: #f6f6f6; /* Light gray */
+    color: #333; /* Dark gray text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Center container and provide spacing from top and bottom */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Styling for the header section */
+header {
+    background-color: #ffcc00; /* Yellow */
+    padding: 20px;
+    border-top-left-radius: 10px; /* Rounded corners for the header */
+    border-top-right-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+header img {
+    width: 200px; 
+    height:200px; 
+    margin-left: 20px; /
+}
+
+/* Styling for the header's h1 element */
+header h1 {
+    font-family: 'Attack Graffiti';
+    color: #8c593b; /* Brown */
+    font-size: 50px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+/* Description styles */
+.description {
+    margin-bottom: 20px;
+}
+
+/* Styling for sections in the document */
+section {
+    margin-bottom: 20px;
+}
+
+/* Styling for buttons */
+button {
+    font-family: sans-serif;
+    background-color: #8c593b; /* Brown */
+    color: #fff; /* White text color */
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #ffcc00; /* Yellow */
+    padding: 20px;
+    border-bottom-left-radius: 10px; /* Rounded corners for the footer */
+    border-bottom-right-radius: 10px;
+    margin-top: 20px; /* Add margin to separate footer from content */
+}
+
+/* Styling for paragraphs inside the footer */
+footer p {
+    margin: 0;
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Add spacing between paragraphs */
+p {
+    margin-bottom: 20px;
+}
+
+/* Add spacing around image container */
+.image-container {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox to align image horizontally */
+    justify-content: center; /* Center the image horizontally */
+}
+
+
+/* Styling for select container */
+.select-container {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox to align select and label horizontally */
+    justify-content: center; /* Center the select and label horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Styling for select label */
+.select-container label {
+    margin-right: 10px; /* Add margin to separate label from select */
+    font-size: 18px; /* Adjust font size */
+}
+
+/* Styling for select element */
+.select-container select {
+    flex-grow: 1; /* Take up remaining space in flex container */
+    padding: 10px; /* Add padding to the select element */
+    border: 2px solid #8c593b; /* Brown border */
+    border-radius: 5px; /* Add border radius */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Show pointer cursor */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Hover effect for select element */
+.select-container select:hover {
+    border-color: #ff9900; /* Darker yellow on hover */
+}
+
+
+/* Add spacing around input container */
+.input-container {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox to align input elements horizontally */
+    justify-content: center; /* Center the input elements horizontally */
+}
+
+/* Styling for color input */
+#customNumber {
+    padding: 10px; /* Add padding to the input */
+    border: 2px solid #8c593b; /* Brown border */
+    border-radius: 5px; /* Add border radius */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Hover effect for color input */
+#customNumber:hover {
+    border-color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Styling for color input label */
+.input-container label {
+    margin-right: 10px; /* Add margin to separate label from input */
+}
+
+/* Style the image within the container */
+.image-container img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    border-radius: 10px; /* Add border radius to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+    border: 5px solid #8c593b; /* Add a thicker border to the image */
+    padding: 10px; /* Add padding inside the border */
+    background-color: #fff; /* White background to simulate photo frame */
+    transition: transform 0.3s ease; /* Add transition effect on hover */
+}
+
+
+/* Hover effect for images */
+.image-container img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+
+/* Styling for buttons */
+button {
+    font-family: sans-serif;
+    background-color: #8c593b; /* Brown */
+    color: #fff; /* White text color */
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #ff9900; /* Darker yellow on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}

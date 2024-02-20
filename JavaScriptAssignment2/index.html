@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery | Assignment 2 | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="Amit Gurung" content="Assignment 2 java">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Art Gallery</h1>
+        <img src="../img/head.gif" >
+    </header>
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Student ID -->
+        <div>
+            <p id="myStudentId"></p>
+        </div>
+        <!-- Description Section -->
+        <div class="description">
+            <p>Welcome to our virtual art gallery, where you can explore masterpieces from renowned artists.</p>
+            <p id="galleryInfo">Hover over the artwork to see details.</p>
+        </div>
+        <!-- Input Container for Custom Color -->
+        <div class="input-container">
+            <label for="customNumber">Enter a number from 1 to 100:</label>
+            <input id="customNumber" type="number" placeholder="" />
+        </div>
+        <!-- Slider Container for Background Color -->
+        <div class="slider-container">
+            <label for="colorSlider">Select Background Color:</label>
+            <input type="range" min="0" max="360" value="0" class="slider" id="colorSlider">
+            <span id="sliderValue">0</span> 
+        </div>
+        <!-- Button Container -->
+        <div class="button-container">
+            <button class="custColor">Change custom color</button>
+            <button class="randColor">Change random color</button>
+            <button id="startSlideshowButton">Start/Stop Slideshow</button> 
+        </div>
+        <!-- Select Container for Artwork -->
+        <div class="select-container">
+            <label for="imageSelect">Select an Artwork:</label>
+            <select id="imageSelect">
+                <option value="">Please choose…</option>
+            </select>
+        </div>
+        <!-- Image Container -->
+        <div class="image-container">
+            <img id="images" src="" alt=""></img>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>Explore and enjoy the beauty of classic art.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/scripts.js" defer></script>
+
+</body>
+</html>
